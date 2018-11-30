@@ -1,0 +1,37 @@
+.container{
+    width: 500rpx;
+    background-color: #f9f9f9;
+    height: 80rpx;
+    border-radius: 24rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container .title {
+    text-align: center;
+    width: 300rpx;  /*必须设置宽度*/
+    overflow: hidden;  /*溢出隐藏*/
+    text-overflow: ellipsis; /*以省略号...显示*/
+    white-space: nowrap;  /*强制不换行*/
+}
+
+.container image {
+    width: 80rpx;
+    height: 80rpx;
+}
+
+.container .btn {
+    position: absolute;
+    width: 130rpx;
+    height: 130rpx;
+}
+
+.container .pre{
+    left: -39rpx;
+}
+
+.container .next{
+    left: 390rpx;
+}

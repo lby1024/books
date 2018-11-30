@@ -1,0 +1,8 @@
+{
+    "usingComponents": {
+        "m-book": "/components/card/card",
+        "m-tag": "/components/tag/tag",
+        "m-loading": "/components/loading/loading",
+        "m-pan": "/components/pan/pan"
+    }
+}

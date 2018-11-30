@@ -1,0 +1,7 @@
+{
+    "usingComponents": {
+        "m-card02": "/components/card02/card02",
+        "m-tag": "/components/tag/tag",
+        "m-like": "/components/like/like"
+    }
+}

@@ -1,0 +1,5 @@
+<!--components/tag/tag.wxml-->
+<view class="tag" catch:tap="add_tag">
+    <text>{{text}}</text>
+    <slot class="after" name="after"></slot>
+</view>

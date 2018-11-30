@@ -1,0 +1,6 @@
+<view class="container">
+    <image class="{{is_playing?'turnaround':''}}" src="{{banner}}" />
+    <image src="./images/music@tag.png" />
+    <image src="{{is_playing?pic_play:pic_pause}}" bind:tap="click_play_btn" />
+    <text >{{text}}</text>
+</view>

@@ -1,0 +1,13 @@
+/* components/pan/pan.wxss */
+.pan>.title {
+    height: 39rpx;
+    line-height: 39rpx;
+    border-left: 15rpx solid #999;
+    padding-left: 24rpx;
+}
+
+.pan>.container {
+    padding-top: 39rpx;
+    padding-bottom: 39rpx;
+    padding-left: 39rpx;
+}

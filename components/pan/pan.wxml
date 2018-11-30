@@ -1,0 +1,7 @@
+<!--components/pan/pan.wxml-->
+<view class="pan">
+    <view class="title">{{title}}</view>
+    <view class="container">
+        <slot />
+    </view>
+</view>

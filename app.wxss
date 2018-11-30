@@ -1,0 +1,6 @@
+/* 这里是设置全局样式的的地方 */
+
+page{
+    font-style: 'PingFangSC-Thin';
+    font-size: 32rpx;
+}

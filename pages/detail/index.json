@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "m-tag": "/components/tag/tag",
+        "m-like": "/components/like/like"
+    }
+}

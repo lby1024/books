@@ -1,0 +1,14 @@
+/* components/like/like.wxss */
+.container {
+}
+.container image {
+    width: 32rpx;
+    height: 28rpx;
+}
+.container text {
+    color: #bbb;
+    font-size: 24rpx;
+    line-height: 24rpx;
+    display: inline-block;
+    transform: translateY(-18rpx);
+}

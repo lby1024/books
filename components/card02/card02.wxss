@@ -1,0 +1,33 @@
+/* components/card02/card02.wxss */
+.card02 {
+    width: 280rpx;
+    height: 360rpx;
+    box-sizing: border-box;
+    background-color: #fff;
+    margin-top: 18rpx;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-top: 18rpx;
+}
+
+.card02>.title {
+    font-size: 24rpx;
+    width: 180rpx;  /*必须设置宽度*/
+    overflow: hidden;  /*溢出隐藏*/
+    text-overflow: ellipsis; /*以省略号...显示*/
+    white-space: nowrap;  /*强制不换行*/
+    font-weight: bold;
+}
+
+.card02>.header {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card02>image {
+    width: 180rpx;
+    height: 170rpx;
+    margin-bottom: 33rpx;
+}

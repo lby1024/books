@@ -1,0 +1,4 @@
+<!--pages/about/about.wxml-->
+<view class="page-about">
+    <text>仅供学习使用</text>
+</view>

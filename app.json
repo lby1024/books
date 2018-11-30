@@ -1,0 +1,40 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/detail/index",
+        "pages/book/index",
+        "pages/user/index",
+        "pages/detail02/detail02",
+        "pages/about/about"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "啦啦啦",
+        "navigationBarTextStyle": "black",
+        "backgroundColor": "#f3f3f3"
+    },
+    "tabBar": {
+        "backgroundColor": "#fff",
+        "list": [
+            {
+                "pagePath": "pages/home/home",
+                "text": "推荐",
+                "selectedIconPath": "static/images/classic@highlight.png",
+                "iconPath": "static/images/classic.png"
+            },
+            {
+                "pagePath": "pages/book/index",
+                "text": "书城",
+                "selectedIconPath": "static/images/book@highlight.png",
+                "iconPath": "static/images/book.png"
+            },
+            {
+                "pagePath": "pages/user/index",
+                "text": "个人",
+                "selectedIconPath": "static/images/my@highlight.png",
+                "iconPath": "static/images/my.png"
+            }
+        ]
+    }
+}

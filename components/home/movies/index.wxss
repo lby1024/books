@@ -1,0 +1,20 @@
+/* components/home/movies/index.wxss */
+.container{
+    display: flex;
+    flex-flow: column;
+    width: 100vw;
+}
+
+.container image:nth-child(1){
+    width: 100%;
+}
+.container image:nth-child(2){
+    width: 46rpx;
+    height: 142rpx;
+    transform: translate(30rpx, -59rpx);
+}
+.container text {
+    height: 200rpx;
+    padding: 0rpx 100rpx 80rpx 100rpx;
+    line-height: 50rpx;
+}

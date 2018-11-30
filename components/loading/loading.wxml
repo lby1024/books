@@ -1,0 +1,6 @@
+<view 
+    wx:if="{{show}}"
+    class="out" >
+    <view></view>
+    <view></view>
+</view>

@@ -1,0 +1,21 @@
+<!--pages/home/home.wxml-->
+<!-- 如果lastest_index为0 ===> 没有数据 ===> 不加载 -->
+<view wx:if="{{lastest_index}}" class="container">
+    <!-- heaer -->
+    <view class="header">
+        <c-date index="{{index}}" />
+        <c-like bind:like="like_cancel" like="{{like}}" number="{{fav}}"/>
+    </view>
+    <!-- 专辑 -->
+    <c-movies wx:if="{{type===100}}" banner="{{image}}" text="{{content}}" />
+    <c-music wx:if="{{type===200}}" banner="{{image}}" text="{{content}}" url="{{url}}" />
+    <c-article wx:if="{{type===300}}" banner="{{image}}" text="{{content}}" />
+    <!-- 上一页  and 下一页 -->
+    <c-nav 
+        title="{{title}}" 
+        lastest="{{lastest_index}}"
+        index="{{index}}"
+        bind:pre="pre" 
+        bind:next="next" >
+    </c-nav>
+</view>

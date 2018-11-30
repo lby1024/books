@@ -1,0 +1,93 @@
+<!--pages/detail/index.wxml-->
+<view class="page-detail">
+    <!-- banner -->
+    <view class="banner">
+        <image src="{{pic}}" />
+        <text class="title">{{title}}</text>
+        <text class="author">{{author}}</text>
+    </view>
+    <!-- 标签 -->
+    <view class="tags">
+        <view class="title">短 评</view>
+        <view class="container">
+            <m-tag 
+                wx:if="{{index<9?true:false}}"
+                wx:for="{{comments}}" 
+                wx:key="{{index}}" 
+                text="{{item.content}}" >
+                <text class="after" slot="after"> +{{item.nums}}</text>
+            </m-tag>
+        </view>
+    </view>
+    <!-- 内容简介01 -->
+    <view class="info01">
+        <view class="title">内容简介</view>
+        <view class="text">
+            <text decode="{{true}}" >{{summary}}</text>
+        </view>
+    </view>
+    <!-- 简介02 -->
+    <view class="info02">
+        <view class="title">书本信息</view>
+        <view class="line">
+            <text class="key">出版社</text>
+            <text class="value">{{publisher}}</text>
+        </view>
+        <view class="line">
+            <text class="key">出版日期</text>
+            <text class="value">{{pubdate}}</text>
+        </view>
+        <view class="line">
+            <text class="key">页数</text>
+            <text class="value">{{pages}}</text>
+        </view>
+        <view class="line">
+            <text class="key">定价</text>
+            <text class="value">{{price}}</text>
+        </view>
+        <view class="line">
+            <text class="key">装针</text>
+            <text class="value">{{binding}}</text>
+        </view>
+    </view>
+
+    <!-- input01 -->
+    <view 
+        class="input01" 
+        wx:if="{{input_show===false}}">
+        <text bind:tap="show_input">请输入评论</text>
+        <m-like 
+            bind:like="like_cancel"
+            like="{{like}}" 
+            number="{{like_nums}}">
+        </m-like>
+    </view>
+    <!-- input02 -->
+    <view 
+        class="input02"
+        catch:tap="hidden_input"
+        wx:if="{{input_show}}" >
+        <view class="container" catch:tap="stop">
+            <view class="title">
+                <text>添加标签 + </text>
+                <text catch:tap="hidden_input">取消</text>
+            </view>
+            <view class="tags">
+                <m-tag 
+                    bind:add="onPost"
+                    wx:if="{{index<3?true:false}}"
+                    wx:for="{{comments}}" 
+                    wx:key="{{index}}" 
+                    text="{{item.content}}" >
+                    <text class="after" slot="after"> +{{item.nums}}</text>
+                </m-tag>
+            </view>
+            <input 
+                class="post" 
+                confirm-type="发送"
+                placeholder='短评最多12个字' 
+                bind:confirm="onPost" >
+            </input>
+        </view>
+    </view>
+</view>

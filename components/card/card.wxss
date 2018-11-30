@@ -1,0 +1,42 @@
+/* components/card/card.wxss */
+.book-card{
+    flex: none; 
+    width: 240rpx;
+    height: 360rpx;
+    position: relative;
+    border-radius: 10rpx;
+    overflow: hidden;
+    margin-bottom: 60rpx;
+    box-shadow:2px 2px 3px #e3e3e3;
+}
+.book-card image {
+    height: 100%;
+    width: 100%;
+}
+.book-card .info {
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 12rpx;
+}
+.book-card .info view {
+    font-size: 24rpx;
+    width: 200rpx;  /*必须设置宽度*/
+    overflow: hidden;  /*溢出隐藏*/
+    text-overflow: ellipsis; /*以省略号...显示*/
+    white-space: nowrap;  /*强制不换行*/
+    margin-bottom: 3px;
+}
+.book-card .info view:nth-child(1) {
+    font-weight: bolder;
+} 
+.book-card .info view:nth-child(2) {
+    color: #999;
+}
+.book-card .info view:nth-child(3) {
+    color: #666;
+    text-align: right;
+    margin-top: 3rpx;
+    font-weight: lighter;
+}

@@ -1,0 +1,25 @@
+.container {
+    position: relative;
+}
+.container text:nth-child(1){
+    font-size: 30rpx;
+}
+.container text:nth-child(2){
+    font-size: 50rpx;
+    font-weight: bolder;
+}
+.container text:nth-child(3){
+    display: inline-block;
+    border-left: 1px solid #333;
+    height: 40rpx;
+    margin: 0 16rpx;
+}
+.container text:nth-child(4) {
+    position: absolute;
+    white-space: nowrap;
+    top: 0;
+    font-size: 24rpx;    
+}
+.container text:nth-child(5) {
+    font-size: 21rpx;
+}

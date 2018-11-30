@@ -1,0 +1,175 @@
+/* pages/detail/index.wxss */
+.page-detail {
+    background-color: #f3f3f3;
+    min-height: 100vh;
+    padding-bottom: 80rpx;
+}
+/* banner 头部 */
+.page-detail>.banner {
+    background-color: #fff;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 60rpx 0;
+}
+.page-detail>.banner>image {
+    width: 240rpx;
+    height: 310rpx;
+    margin: 0 auto;    
+    box-shadow: 5px 2px 6px #999;
+}
+.page-detail>.banner>.title {
+    font-size: 32rpx;
+    margin-top: 24rpx;
+    font-weight: bolder;
+}
+.page-detail>.banner>.author {
+    font-size: 28rpx;
+    color: #999;
+    margin-top: 16rpx;
+}
+/* 标签区域 */
+.page-detail .tags {
+    background-color: #fff;
+    margin-top: 30rpx;
+}
+.page-detail .tags > .title {
+    text-align: center;
+    height: 66rpx;
+    line-height: 66rpx;
+}
+.page-detail .tags > .container {
+    padding: 24rpx 66rpx;
+}
+.page-detail .tags > .container > m-tag:nth-child(1) view {
+    background-color: #fffbdd;
+}
+.page-detail .tags > .container > m-tag:nth-child(2) view {
+    background-color: #eefbff;
+}
+.page-detail .tags > .container .after {
+    color: #999;
+    font-size: 24rpx;
+}
+/* 简介01 */
+.page-detail .info01 {
+    background-color: #fff;
+    margin-top: 30rpx;
+    padding: 66rpx;
+}
+
+.page-detail>.info01>.title {
+    text-align: center;
+    height: 66rpx;
+    line-height: 66rpx;
+}
+
+.page-detail>.info01>.text {
+    text-indent: 2em;
+    line-height: 1.5em;
+    font-size: 24rpx;
+}
+
+/* 简介02 */
+.page-detail>.info02 {
+    background-color: #fff;
+    margin-top: 30rpx;
+    padding: 66rpx;
+}
+
+.page-detail>.info02>.title {
+    font-size: 28rpx;
+    text-align: center;
+    height: 66rpx;
+    line-height: 66rpx;
+    margin-bottom: 21rpx;
+}
+
+.page-detail>.info02>.line {
+    font-size: 24rpx;
+    margin-bottom: 12rpx;
+}
+
+.page-detail>.info02>.line>.key {
+    display: inline-block;
+    color: #999;
+    width: 160rpx;
+}
+
+/* 点评区域 */
+.input01 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 80rpx;
+    background-color: #fff;
+    display: flex;
+    flex-flow: space-between;
+    align-items: center;
+    width: 100vw;
+    box-shadow: 1px -1px 12px #f3f3f3;
+}
+
+.input01>text {
+    display: inline-block;
+    background-color: #f3f3f3;
+    height: 50rpx;
+    border-radius: 12rpx;
+    line-height: 50rpx;
+    width: 66%;
+    box-sizing: border-box;
+    padding-left: 30rpx;
+    font-size: 24rpx;
+    color: #999;
+    margin-right: 30rpx;
+    margin-left: 50rpx;
+}
+
+.input02 {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .3);
+    bottom: 0;
+    left: 0;
+}
+
+.input02 .container {
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 66rpx;
+    padding-top: 24rpx;
+    padding-bottom: 24rpx;
+    font-size: 28rpx;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.input02 .container>.title {
+    display: flex;
+    color: #999;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 33rpx;
+    height: 60rpx;
+}
+
+.input02 .container>.title>text:nth-child(2) {
+    display: inline-block;
+    height: 60rpx;
+    line-height: 60rpx;
+    width: 100rpx;
+    text-align: center;
+}
+
+.input02 .container>.post {
+    height: 60rpx;
+    background-color: #f3f3f3;
+    color: #999;
+    font-size: 24rpx;
+    border-radius: 24rpx;
+    box-sizing: border-box;
+    padding-left: 39rpx;
+}

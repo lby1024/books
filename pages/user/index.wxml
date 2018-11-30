@@ -1,0 +1,50 @@
+<!--pages/user/index.wxml-->
+<view class="page-me">
+    <view class="banner">
+        <!-- 背景图 -->
+        <image src="../../static/images/my@bg.png" />
+        <!-- 登录按钮 -->
+        <button 
+            class="btn"
+            open-type="getUserInfo"
+            bindgetuserinfo="get_user_info01"
+            wx:if="{{!show}}" >
+            <image src="../../static/images/click_me.png" />
+        </button>
+        <!-- 头像 -->
+        <view class="btn" wx:if="{{show}}" >
+            <image src="{{user_pic}}" />
+        </view>
+        <!-- 关于我们 -->
+        <view class="left">
+            <icon class="line01" type="info" size="16" bind:tap="go2page" />
+            <text class="line02">关于我们</text>
+        </view>
+        <!-- 点赞数量 -->
+        <view class="right">
+            <text class="line01">{{books_num}}</text>
+            <text class="line02">收藏的书籍</text>
+        </view>
+    </view>
+    <view class="container">
+        <m-card02 
+            wx:for="{{classic}}" 
+            title="{{item.content}}"
+            pic="{{item.image}}"
+            iid="{{item.id}}"
+            type="{{item.type}}"
+            wx:key="{{index}}" >
+            <m-tag wx:if="{{item.type==100}}" slot="tag" text="电影" />
+            <m-tag wx:if="{{item.type==200}}" slot="tag" text="音乐" />
+            <m-tag wx:if="{{item.type==300}}" slot="tag" text="句子" />
+            <m-like 
+                slot="like"
+                bind:like="like_cancel"
+                iid="{{item.id}}"
+                type="{{item.type}}"
+                number="{{item.fav_nums}}"
+                like="{{item.like_status}}" >
+            </m-like>
+        </m-card02>
+    </view>
+</view>

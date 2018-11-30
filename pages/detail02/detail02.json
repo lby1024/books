@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "c-like": "/components/like/like",
+        "c-date": "/components/date/date",
+        "c-music": "/components/home/music/index",
+        "c-article": "/components/home/article/index",
+        "c-movies": "/components/home/movies/index"
+    }
+}

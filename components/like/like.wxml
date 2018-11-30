@@ -1,0 +1,5 @@
+<!--components/like/like.wxml-->
+<view class="container" catchtap="click" >
+    <image src="{{like?pic01:pic02}}" />
+    <text>{{number}}</text>
+</view>

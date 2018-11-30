@@ -1,0 +1,9 @@
+<!--components/card/card.wxml-->
+<view class="book-card" bind:tap="go2detail">
+    <image src="{{pic}}"></image>
+    <view class="info">
+        <view class="title">{{title}}</view>
+        <view class="auther">{{author}}</view>
+        <view class="like" wx:if="{{like}}">{{like}} 喜欢</view>
+    </view>
+</view>

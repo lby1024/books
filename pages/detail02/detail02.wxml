@@ -1,0 +1,9 @@
+<!--pages/detail02/detail02.wxml-->
+<view class="header">
+    <c-date index="{{index}}" />
+    <c-like bind:like="like_cancel" like="{{like}}" number="{{fav}}"/>
+</view>
+<!-- 专辑 -->
+<c-movies wx:if="{{type===100}}" banner="{{image}}" text="{{content}}" />
+<c-music wx:if="{{type===200}}" banner="{{image}}" text="{{content}}" url="{{url}}" />
+<c-article wx:if="{{type===300}}" banner="{{image}}" text="{{content}}" />

@@ -1,0 +1,9 @@
+<!--components/card02/card02.wxml-->
+<view class="card02" bind:tap="go2detail" >
+    <view class="header">
+        <slot name="tag"></slot>
+        <slot name="like"></slot>
+    </view>
+    <image src="{{pic}}" />
+    <view class="title">{{title}}</view>
+</view>

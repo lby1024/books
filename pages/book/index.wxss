@@ -1,0 +1,125 @@
+/* pages/book/index.wxss */
+.page-books {
+    background-color: #f3f3f3;
+    padding-top: 160rpx;
+}
+
+.page-books .search {
+    background-color: #fff;
+    padding: 18rpx 0;
+    position: fixed;
+    top: 0;
+    height: 60rpx;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.page-books .search .input {
+    position: relative;
+    width: 80%;
+    height: 60rpx;
+    line-height: 60rpx;
+    text-align: center;
+    color: #999;
+    background-color: #f3f3f3;
+    border-radius: 24rpx;
+    margin: 0 auto;
+}
+
+.page-books .search .input image{
+    position: absolute;
+    height: 39rpx;
+    width: 39rpx;
+    left: 28rpx;
+    top: 12rpx;
+}
+
+.page-books .title {
+    text-align: center;
+}
+
+.page-books .books {
+    padding: 39px;
+    padding-bottom: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+/* 搜索页面 */
+.page-search {
+    padding: 30rpx;
+    padding-top: 150rpx;
+}
+
+.page-search .input {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    height: 90rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 28rpx;
+    border-bottom: 1px solid #f3f3f3;
+    margin-bottom: 66rpx;
+}
+
+.page-search .input input {
+    background-color: #f3f3f3;
+    width: 70%;
+    border-radius: 18rpx;
+    box-sizing: border-box;
+    padding-left: 88rpx;
+}
+
+.page-search .input icon {
+    z-index: 1;
+    position: absolute;
+    top: 28rpx;
+    left: 63%;
+}
+
+.page-search .input image{
+    z-index: 1;
+    position: absolute;
+    height: 39rpx;
+    width: 39rpx;
+    left: 8%;
+    top: 28rpx;
+}
+
+.page-search m-tag view{
+    margin-bottom: 28rpx;
+}
+
+.page-search scroll-view {
+    background-color: #f3f3f3;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 90rpx;
+}
+.page-search scroll-view m-loading:nth-child(1)>view {
+    transform: translateY(390rpx);
+}
+.page-search scroll-view m-loading:nth-child(3)>view {
+    transform: translateY(-90rpx);
+}
+
+.page-search scroll-view .container {
+    padding: 60rpx 90rpx;
+    padding-bottom: 20rpx;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.page-search scroll-view .no-more {
+    text-align: center;
+    padding: 20rpx;
+    transform: translateY(-60rpx);
+}

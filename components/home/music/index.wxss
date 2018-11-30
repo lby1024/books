@@ -1,0 +1,43 @@
+/* components/home/music/index.wxss */
+@import '../comeon.wxss';
+.container {
+    position: relative;
+    padding-top: 500rpx;
+}
+
+.container image:nth-child(1) {
+    position: absolute;
+    border-radius: 50%;
+    width: 500rpx;
+    height: 500rpx;
+    left: 50%;
+    top: 60rpx;
+    margin-left: -250rpx;
+}
+.container image:nth-child(3) {
+    position: absolute;
+    width: 120rpx;
+    height: 120rpx;
+    position: absolute;
+    left: 50%;
+    margin-left: -60rpx;
+    top: 250rpx;
+}
+.container text {
+    text-align: center;
+    padding: 0 250rpx;
+    height: 260rpx;
+}
+
+.turnaround {
+    animation: turn 12s linear infinite;
+}
+
+@keyframes turn {
+    0% {
+        transform: rotate(0deg)
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
